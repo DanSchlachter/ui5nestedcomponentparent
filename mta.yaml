@@ -56,7 +56,15 @@ modules:
     - npm install
     - npm run build:cf
     supported-platforms: []
+  requires:
+      - name: html5_app_runtime
 resources:
+- name: provideChildUI 
+  type: mta-provided 
+  parameters:
+    mta-id: child
+    mta-provides-dependency: nschildchildcomp
+    mta-version: ">=0.0.1" 
 - name: parent-destination-service
   type: org.cloudfoundry.managed-service
   parameters:
@@ -88,5 +96,11 @@ resources:
     service: xsuaa
     service-name: parent-xsuaa-service
     service-plan: application
+- name: html5_app_runtime
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: html5_app_runtime
+    service-plan: app-runtime
 parameters:
   deploy_mode: html5-repo

@@ -57,6 +57,15 @@
                 "sap.ui.core": {},
                 "sap.m": {},
                 "sap.ui.layout": {}
+            },
+            "components": {
+				"ns.child.childcomp": {}
+			}
+        },
+        "componentUsages": {
+            "reuse": {
+                "name": "ns.child.childcomp",
+                "lazy": false
             }
         },
         "contentDensities": {

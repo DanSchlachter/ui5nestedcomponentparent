@@ -1,4 +1,4 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ns.parentComp.parentcomp.controller.parentComp" displayBlock="true">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" controllerName="ns.parentComp.parentcomp.controller.parentComp" displayBlock="true">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
@@ -8,7 +8,7 @@
 					        <items>
 					            <IconTabFilter text="Orders" count="22" showAll="true" id="filter0">
 					                <content>
-					                    <core:ComponentContainer width="100%" id="myChildContainer"/>
+					                    <core:ComponentContainer usage="reuse" async="true"/>
 					                </content>
 					            </IconTabFilter>
 					            <IconTabFilter text="Open" count="10" icon="sap-icon://task" iconColor="Critical" id="filter1"/>
