@@ -2,24 +2,6 @@
   "welcomeFile": "/index.html",
   "authenticationMethod": "route",
   "routes": [
-      {
-		"source": "^/childcomp/(.*)",
-		"authenticationType": "xsuaa",
-        "service": "html5_app_runtime",
-        "target": "/8f735d18-6fc1-4c39-860e-29108270260c.childComp.nschildchildcomp-1.0.0/$1"
-	},
-    {
-      "source": "^/resources/(.*)$",
-      "target": "/resources/$1",
-      "authenticationType": "none",
-      "destination": "ui5"
-    },
-    {
-      "source": "^/test-resources/(.*)$",
-      "target": "/test-resources/$1",
-      "authenticationType": "none",
-      "destination": "ui5"
-    },
     {
       "source": "^(.*)$",
       "target": "$1",

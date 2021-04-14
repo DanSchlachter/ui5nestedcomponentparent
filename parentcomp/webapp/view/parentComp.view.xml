@@ -8,7 +8,7 @@
 					        <items>
 					            <IconTabFilter text="Orders" count="22" showAll="true" id="filter0">
 					                <content>
-					                    <core:ComponentContainer usage="reuse" async="true"/>
+					                    <core:ComponentContainer usage="reuse"/>
 					                </content>
 					            </IconTabFilter>
 					            <IconTabFilter text="Open" count="10" icon="sap-icon://task" iconColor="Critical" id="filter1"/>
